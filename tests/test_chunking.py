@@ -2,6 +2,7 @@ from itertools import pairwise
 
 from redazione_ai.ingest.chunking import split_into_chunks
 
+
 def test_testo_vuoto_restituisce_lista_vuota():
     assert split_into_chunks("") == []
     assert split_into_chunks("   \n\n  ") == []
